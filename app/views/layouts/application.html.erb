@@ -9,7 +9,19 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-text">
+         <%=link_to "Yelp", restaurants_path%>
+      </span>
+      <%# <span> <button type="button" class="btn btn-light">
+      <%= link_to "New Restaurant", new_article_path(@article) %>
+      <%# </button> %>
+       <%# </span> %>
+    </div>
+  </nav>
+  </header>
   <body>
     <%= yield %>
   </body>
